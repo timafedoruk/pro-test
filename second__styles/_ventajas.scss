@@ -1,0 +1,242 @@
+.ventajas {
+    overflow: hidden;
+
+
+    &__container {
+        width: calc(718px + (1529 - 718) * ((100vw - 768px) / (1918 - 768)));
+        margin: 0 auto;
+    }
+
+    &__lable {
+        @media (max-width: 769px) {
+            span {
+                display: block;
+            }
+        }
+
+        text-align: center;
+        margin-top: calc(52px + (133 - 52) * ((100vw - 768px) / (1918 - 768)));
+        margin-bottom: calc(70px + (120 - 70) * ((100vw - 768px) / (1918 - 768)));
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: end;
+        // align-items: flex-end !important;
+
+        @media (max-width: 769px) {
+            display: block;
+        }
+    }
+
+    &__items {
+        @media (max-width: 769px) {}
+
+        >:not(:last-child) {
+            margin-bottom: calc(15px + (32 - 15) * ((100vw - 768px) / (1918 - 768)));
+        }
+    }
+
+    &__item {
+
+        position: relative;
+        z-index: 10;
+
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        perspective: 10000px;
+        height: calc(75px + (118.5 - 66) * ((100vw - 768px) / (1918 - 768)));
+        width: calc(400px + (670 - 374) * ((100vw - 768px) / (1918 - 768)));
+        // @media (max-width: 769px){
+        //     height: 145px;
+        //     padding-left: 23px;
+        //     padding-right: 10px;
+        //     margin: 0 auto;
+        // }
+
+       
+
+        @media (hover: hover) {
+            &:hover .ventajas__front {
+                transform: rotatex(180deg);
+            }
+
+            &:hover .ventajas__back {
+                transform: rotatex(360deg);
+            }
+        }
+
+    }
+
+    &__text {
+        text-align: center;
+        width: 545px;
+
+        @media (max-width: 769px) {
+            font-size: 21px;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    &__ibg {
+        position: absolute;
+        z-index: -1;
+        top: -6%;
+        left: 0%;
+        //  
+
+
+        width: calc(354px + (632 - 354) * ((100vw - 768px) / (1918 - 768))) !important;
+        height: calc(354px + (632 - 354) * ((100vw - 768px) / (1918 - 768)));
+
+        @media (max-width:1024px) {
+            top: -2%;
+            left: -14%;
+            width: calc(354px + (690 - 354) * ((100vw - 768px) / (1918 - 768))) !important;
+            height: calc(354px + (690 - 354) * ((100vw - 768px) / (1918 - 768)));
+        }
+
+        img {
+            object-position: center center;
+        }
+    }
+
+    .ventajas__img__left {
+        margin-right: 10px;
+    }
+
+    .ventajas__img__right {
+        margin-left: 10px;
+    }
+}
+
+.ventajas__front,
+.ventajas__back {
+    backface-visibility: hidden;
+
+    border-radius: 35px;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: calc(400px + (670 - 374) * ((100vw - 768px) / (1918 - 768)));
+    height: calc(75px + (118.5 - 66) * ((100vw - 768px) / (1918 - 768)));
+    padding-left: calc(15px + (29 - 10) * ((100vw - 768px) / (1918 - 768)));
+    padding-right: calc(15px + (29 - 10) * ((100vw - 768px) / (1918 - 768)));
+    transition: all 1s;
+}
+
+
+.ventajas__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    border: 3px solid rgba(236, 236, 236, 1);
+    transform: rotatex(180deg);
+
+
+    font-size: calc(14px + (16 - 12) * ((100vw - 768px) / (1918 - 768)));
+    line-height: 138%;
+    letter-spacing: -0.015em;
+
+}
+
+.ventajas__front {
+    border: 3px solid #00A9EE;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+
+    font-weight: 500;
+    font-size: calc(14px + (24 - 14) * ((100vw - 768px) / (1918 - 768)));
+}
+
+
+
+
+@media (max-width: 769px) {
+    .ventajas {
+
+        &__container {
+            margin-bottom: 300px;
+            width: calc(350px + (480 - 350) * ((100vw - 375px) / (769 - 375)));
+        }
+
+        &__lable {
+            margin-top: 0;
+
+            font-size: 24px !important;
+        }
+
+        &__content {
+        }
+
+        &__items {
+        }
+
+        &__item {
+            height: 147px;
+            width: calc(339px + (400 - 339) * ((100vw - 375px) / (769 - 375)));
+            margin: 0 auto;
+        }
+
+        &__front {
+            .ventajas__text{
+                font-weight: 400;
+                font-size: 21px;
+                line-height: 138%;
+            }
+        }
+
+        &__text {}
+
+        &__back {
+            .ventajas__text{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 138%;
+            }
+        }
+
+        &__ibg {
+            top: 260px;
+            left: 25%;
+            width: 632px !important;
+            height: 632px !important;
+        }
+
+        
+    }
+    .ventajas__front,
+    .ventajas__back{
+        height: 147px;
+        width: calc(339px + (400 - 339) * ((100vw - 375px) / (769 - 375)));
+        border-radius: 50px;
+    }
+}
+
+@media (hover: none){
+    .flip {
+        .ventajas__front{
+            transform: rotatex(180deg) !important;
+        }
+    }
+    .flip {
+        .ventajas__back{
+            transform: rotatex(360deg) !important;
+        }
+    }
+}

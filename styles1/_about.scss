@@ -1,0 +1,95 @@
+.about {
+
+    &__container {
+        width: calc(637px + (1431 - 637) * ((100vw - 768px) / (1918 - 768)));
+        margin: 0 auto;
+        @media (max-width: 519px) {
+            width: 80% !important;
+        }
+        text-align: center;
+    }
+
+    &__title {
+        @media (max-width: 519px){
+            margin-bottom: 22px;
+        }
+    }
+
+    &__main {
+        margin: calc(15px + (43 - 15) * ((100vw - 768px) / (1918 - 768))) 0 calc(28px + (56 - 28) * ((100vw - 768px) / (1918 - 768))) 0;
+        line-height: 175%;
+        font-size: calc(16px + (40 - 16) * ((100vw - 768px) / (1918 - 768)));
+        @media (max-width: 519px) {
+            font-size: 16px;
+            width: 261px !important;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            span{
+                display: block;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        margin: 0 calc((9px + (15 - 9) * ((100vw - 768px) / (1918 - 768)))*(-1));
+        @media (max-width: 519px){
+            flex-direction: column;
+            >:not(:last-child){
+                margin-bottom:  calc(18px + (24 - 18) * ((100vw - 375px) / (768 - 375)));
+            }
+        }
+    }
+
+
+
+    &__item {
+        @media (min-width: 519px){
+            flex: 0 0 20%;
+            text-align: center;
+        }
+        text-align: left;
+        padding: 0 calc(9px + (15 - 9) * ((100vw - 768px) / (1918 - 768)));
+        @media (max-width: 519px) {
+            display: flex;
+        }
+    }
+        
+        
+        
+        
+        &__icon {
+        margin-bottom: calc(10px + (21.02 - 10) * ((100vw - 768px) / (1918 - 768)));
+        @media (max-width: 519px){
+            margin-bottom: 0;
+        }
+        
+        img {
+            width: calc(27px + (60 - 27) * ((100vw - 768px) / (1918 - 768)));
+            @media (max-width: 519px){
+                width: 30px;
+            }
+        }
+    }
+    
+    &__text {
+        @media (max-width: 519px){
+            align-self: center;
+            letter-spacing: -0.015em !important;
+            font-size: 16px !important;
+            line-height: 112% !important; 
+            font-weight: 400 !important;
+            margin-left: 15px;
+        }
+        font-weight: 700;
+        font-size: calc(12px + (24 - 12) * ((100vw - 768px) / (1918 - 768)));
+        line-height: 100%;
+        letter-spacing: -0.015em;
+    }
+}
+
+
+.about__item5 {
+    transform: translate(30vh, 0vh) scale(0, 0);
+    opacity: 0;
+}

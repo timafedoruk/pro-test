@@ -1,0 +1,99 @@
+.main-info {
+
+    &__container {
+        margin: 0 auto;
+        width: calc(648px + (1207 - 648) * ((100vw - 768px) / (1918 - 768)));
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 calc((10px + (44.5 - 10) * ((100vw - 768px) / (1918 - 768))) * -1);
+        :nth-child(2){
+            br{
+                display: block !important;
+            }
+        }
+    }
+
+    &__item {
+        flex: 0 0 25%;
+        padding: 0 calc(10px + (44.5 - 10) * ((100vw - 768px) / (1918 - 768)));
+
+        >* {
+            margin: 0 auto;
+        }
+
+        >*:not(:last-child) {
+            margin-bottom: calc(11px + (20 - 11) * ((100vw - 768px) / (1918 - 768)));
+        }
+    }
+
+    &__img {
+        width: calc(70px + (121 - 70) * ((100vw - 768px) / (1918 - 768)));
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        font-weight: 500;
+        font-size: calc(14px + (24 - 14) * ((100vw - 768px) / (1918 - 768)));
+        line-height: 125%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .main-info{
+        br{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 519px) {
+    .main-info {
+
+        &__container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        &__cards {
+            flex-direction: column;
+
+            >:not(:last-child) {
+                margin-bottom: calc(28px + (38 - 28) * ((100vw - 375px) / (520 - 375))) !important;
+            }
+        }
+
+        &__item {
+            align-items: center;
+            display: flex;
+        }
+
+        &__img {
+            width: calc(44px + (54 - 44) * ((100vw - 375px) / (520 - 375)));
+            margin: 0;
+            margin-bottom: 0 !important;
+            margin-right: calc(24px + (30 - 24) * ((100vw - 375px) / (520 - 375)));
+
+            img {
+                width: calc(44px + (54 - 44) * ((100vw - 375px) / (520 - 375)));
+            }
+        }
+
+        &__text {
+            font-weight: 400;
+            text-align: left;
+            margin: 0;
+            line-height: 138% !important;
+
+            font-size: 16px;
+        }
+
+    }
+}

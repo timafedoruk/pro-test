@@ -1,0 +1,130 @@
+.advantages {
+    position: relative;
+
+    &__ibg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        //  
+
+
+        width: calc(330px + (806 - 330) * ((100vw - 768px) / (1918 - 768))) !important;
+        height: calc(352px + (892 - 352) * ((100vw - 768px) / (1918 - 768)));
+
+        img {
+            object-position: center right;
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width:1230px) {
+            top: 30%;
+            right: 0;
+        }
+
+        @media (max-width:950px) {
+            top: 35%;
+            right: 0;
+        }
+    }
+
+    &__container {
+        width: calc(650px + (1462 - 650) * ((100vw - 768px) / (1918 - 768)));
+        margin: 0 auto;
+    }
+
+    &__lable {
+        text-align: left;
+        br{
+            display: none;
+        }
+        @media (max-width:1230px) {
+            text-align: center;
+        }
+    }
+
+    &__items {
+        margin-top: calc(50px + (105 - 50) * ((100vw - 768px) / (1918 - 768)));
+
+        @media (min-width:1024px) {
+            margin-left: 20px;
+        }
+
+        >*:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        span {
+            display: block;
+        }
+
+
+    }
+
+    &__img {
+        width: calc(54px + (120 - 54) * ((100vw - 768px) / (1918 - 768)));
+        height: calc(51px + (113 - 51) * ((100vw - 768px) / (1918 - 768)));
+    }
+
+    &__text {
+        padding-left: 42px;
+        font-size: calc(14px + (18 - 14) * ((100vw - 768px) / (1918 - 768)));
+        line-height: 167%;
+
+        width: calc(284px + (586 - 284) * ((100vw - 768px) / (1918 - 768)));
+
+        @media (max-width: 1500px) {
+            padding-left: 25px;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .advantages {
+
+        &__container {}
+
+        &__ibg {
+            top: 95%;
+            @media (max-width:535px) {
+                top: 100%;
+            }
+
+            width: calc(245px + (340 - 245) * ((100vw - 375px) / (769 - 375))) !important;
+            height: calc(245px + (340 - 245) * ((100vw - 375px) / (769 - 375))) !important;
+        }
+
+        &__lable {           
+            br{
+                display: block;
+            }
+        }
+
+        &__items {}
+
+        &__item { 
+            justify-content: center;
+        }
+
+        &__img {
+            width: 72px;
+            height: 72px;
+        }
+
+        &__text {
+            padding-left: 20px;
+            font-weight: 400;
+            width: 253px;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.015em;
+        }
+    }
+}

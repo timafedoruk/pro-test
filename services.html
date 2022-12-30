@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="styles1/index.css">
+
+    <script src="js/jq.js"></script>
+    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" defer />
+    <script src="js/wow.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <link rel="shortcut icon" href="img/icons/favicon.svg" type=" image/svg+xml">
+
+    <title>pro-test</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="services.html" class="header__logo"><img src="img/logo.svg" alt="" class="header__img"></a>
+            <div class="header__burger">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="img/icons/burger01.svg">
+                    <img src="img/icons/burger.svg" alt="">
+                </picture>
+            </div>
+            <nav class="header__menu">
+                <div class="header__kros">x</div>
+                <ul class="header__list">
+                    <li><a href="services.html" key="services" class="lang">Software testing services</a></li>
+                    <li><a href="course.html" class="lang" key="courses">Software testing courses</a></li>
+                    <!-- <li class="header__changelang">
+                        <button id="en" class="translate en  invisible"><span><a
+                                    href="services.html">en</a></span></button>
+                        <button id="ru" class="translate ru vis"><span><a href="services.html">ru</a></span></button>
+                    </li> -->
+                </ul>
+                <div class="header__bottom">
+                    <h4 class="header__name">About Us</h4>
+                    <div class="header__item__long">We have been providing testing<br>services since 2016. We
+                        have<br>experience
+                        in testing digital products<br>of both large state-owned enterprises<br>and foreign companies.
+                        We teach<br>Software testing and accompany our<br>students during their work
+                    </div>
+                    <div class="header__item">
+                        <a href="mailto:support@pro-test.studio" class="header__text">support@pro-test.studio</a>
+                        <img src="img/footer/mail.svg" class="header__icon">
+                    </div>
+                    <div class="header__item">
+                        <a target="_blank" href="https://goo.gl/maps/D7PTG56SqYukgodL6" class="header__text">UAE,
+                            Dubai</a>
+                        <img src="img/footer/location.svg" class="header__icon">
+                    </div>
+                    <div class="header__item">
+                        <a href="tel:+971585902540" class="header__text">+ 971 58 590 2540</a>
+                        <img src="img/footer/phone.svg" class="header__icon">
+                    </div>
+                    <img src="img/logo.svg" alt="" class="header__logo-bottom">
+                </div>
+            </nav>
+        </header>
+        <header class="header header1">
+            <a href="services.html" class="header__logo"><img src="img/logo.svg" alt="" class="header__img"></a>
+            <div class="header__burger"><img src="img/icons/burger01.svg" alt=""></div>
+            <nav class="header__menu">
+                <div class="header__kros">x</div>
+                <ul class="header__list">
+                    <li><a href="services.html" key="services" class="lang">Software testing services</a></li>
+                    <li><a href="course.html" class="lang" key="courses">Software testing courses</a></li>
+
+                    <!-- <li class="header__changelang">
+                        <button id="en" class="translate en  invisible"><span><a
+                                    href="services.html">en</a></span></button>
+                        <button id="ru" class="translate ru vis"><span><a href="services.html">ru</a></span></button>
+
+                    </li> -->
+                </ul>
+
+                <div class="header__bottom">
+                    <h4 class="header__name">About Us</h4>
+                    <div class="header__item__long">We have been providing testing<br>services since 2016. We
+                        have<br>experience
+                        in testing digital products<br>of both large state-owned enterprises<br>and foreign companies.
+                        We teach<br>Software testing and accompany our<br>students during their work
+                    </div>
+                    <div class="header__item">
+                        <a href="mailto:support@pro-test.studio" class="header__text">support@pro-test.studio</a>
+                        <img src="img/footer/mail1.png" class="header__icon">
+                    </div>
+                    <div class="header__item">
+                        <a target="_blank" href="https://goo.gl/maps/D7PTG56SqYukgodL6" class="header__text">UAE,
+                            Dubai</a>
+                        <img src="img/footer/location.svg" class="header__icon">
+                    </div>
+                    <div class="header__item">
+                        <a href="tel:+971585902540" class="header__text">+ 971 58 590 2540</a>
+                        <img src="img/footer/phone1.png" class="header__icon">
+                    </div>
+                    <img src="img/logo.svg" alt="" class="header__logo-bottom">
+                </div>
+            </nav>
+        </header>
+
+        <main class="page">
+            <div class="up-btn js-scroll-top"><img src="img/icons/up.svg" alt=""></div>
+
+            <section class="page__title title">
+                <div class="title__container _container">
+                    <div class="title__column">
+                        <h1>Software<br>testing services</h1>
+                        <button class="title__button button-blue">
+                            <p class="button-blue__link">Contacts</p>
+                        </button>
+                    </div>
+                    <img src="img/title/title__main.svg" alt="main" class="title__img">
+                </div>
+
+            </section>
+
+            <section class="page__about about ">
+                <div class="about__container">
+                    <h2 class="about__title">About us</h2>
+                    <h3 class="about__main">We help you achieve the desired quality of your products</h3>
+                    <div class="about__content">
+                        <div class="about__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class="about__icon "><img src="img/icons/punto.svg" alt=""></div>
+                            <div class="about__text description">6+ years in IT sphere</div>
+                        </div>
+                        <div class="about__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class="about__icon"><img src="img/icons/punto.svg" alt=""></div>
+                            <div class="about__text description">30+ completed projects</div>
+                        </div>
+                        <div class="about__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class="about__icon"><img src="img/icons/punto.svg" alt=""></div>
+                            <div class="about__text description">15+ client companies from all over the world</div>
+                        </div>
+                        <div class="about__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class="about__icon"><img src="img/icons/punto.svg" alt=""></div>
+                            <div class="about__text description">20+ employees on staff</div>
+                        </div>
+                        <div class="about__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class="about__icon"><img src="img/icons/punto.svg" alt=""></div>
+                            <div class="about__text description">100% quality guarantee</div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__make make">
+                <div class="make__container">
+                    <h2 class="make__lable">What we test</h2>
+                    <div class="make__content">
+                        <div class="make__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class="make__img">
+                                <picture>
+                                    <source media="(max-width: 519px)" srcset="img/icons/make__web_1.svg">
+                                    <img src="img/icons/make__web.svg" alt="web">
+                                </picture>
+                            </div>
+                            <div class="make__text description">Web applications</div>
+                        </div>
+                        <div class="make__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class="make__img">
+                                <picture>
+                                    <source media="(max-width: 519px)" srcset="img/icons/make__mobile_1.svg">
+                                    <img src="img/icons/make__mobile.svg" alt="web">
+                                </picture>
+                            </div>
+                            <div class="make__text description">Native and Hibrid<br>iOS/Android apps</div>
+                        </div>
+                        <div class="make__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class="make__img">
+                                <picture>
+                                    <source media="(max-width: 519px)" srcset="img/icons/make__desktop_1.svg">
+                                    <img src="img/icons/make__desktop.svg" alt="web">
+                                </picture>
+                            </div>
+                            <div class="make__text description">macOS and Windows<br>desktop apps</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__types types">
+                <div class="types__container">
+                    <h2 class="types__lable">Testing types we perform</h2>
+                    <div class="types__content">
+                        <div class="types__items ">
+
+                            <div class="types__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                                data-wow-delay="0.5s">
+                                <div class="types__front">
+                                    <img src="img/types/functionality.svg" alt="functionality"
+                                        class="types__img-content ">
+                                    <div class="types__text">Functional testing</div>
+                                </div>
+                                <div class="types__back">
+                                    <img src="img/types/functionality.svg" alt="functionality"
+                                        class="types__img-content ">
+                                    <div class="types__text">We can check the software for compliance with functional
+                                        requirements and business tasks</div>
+                                </div>
+                            </div>
+
+                            <div class="types__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                                data-wow-delay="0.5s">
+                                <div class="types__front">
+                                    <img src="img/types/automatization.svg" alt="functionality"
+                                        class="types__img-content">
+                                    <div class="types__text">Test Automation</div>
+                                </div>
+                                <div class="types__back">
+                                    <img src="img/types/automatization.svg" alt="functionality"
+                                        class="types__img-content ">
+                                    <div class="types__text">We can create scripts that will work for you</div>
+                                </div>
+                            </div>
+
+                            <div class="types__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                                data-wow-delay="0.5s">
+                                <div class="types__front">
+                                    <img src="img/types/ux-ui.svg" alt="functionality" class="types__img-content">
+                                    <div class="types__text">UX/UI testing</div>
+                                </div>
+                                <div class="types__back">
+                                    <img src="img/types/ux-ui.svg" alt="functionality" class="types__img-content ">
+                                    <div class="types__text">We can evaluate the attractiveness and usability of your
+                                        product and test the layout</div>
+                                </div>
+                            </div>
+
+                            <div class="types__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                                data-wow-delay="0.5s">
+                                <div class="types__front">
+                                    <img src="img/types/hard.svg" alt="functionality" class="types__img-content">
+                                    <div class="types__text">Load testing</div>
+                                </div>
+                                <div class="types__back types-back__big ">
+                                    <img src="img/types/hard.svg" alt="functionality" class="types__img-content ">
+                                    <div class="types__text">We can analyze usage scenarios and product load, develop
+                                        cases for load testing and determine system performance limits</div>
+                                </div>
+                            </div>
+
+                            <div class="types__item animate__animated animate__fadeInUp wow " data-wow-duration="1.5s"
+                                data-wow-delay="0.5s">
+                                <div class="types__front">
+                                    <img src="img/types/api.svg" alt="functionality" class="types__img-content">
+                                    <div class="types__text">API and integration testing</div>
+                                </div>
+                                <div class="types__back types-back__big ">
+                                    <img src="img/types/api.svg" alt="functionality" class="types__img-content ">
+                                    <div class="types__text">We can check compliance with system logic and the
+                                        correctness of integration of individual services. We can test Rest API, SOAP
+                                        API, and microservices testing</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="types__ibg _ibg">
+                            <img src="img/types/main.png" alt="main-photo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__stage stage">
+                <div class="stage__container">
+                    <h2 class="stage__lable">Continuous Testing at every step</h2>
+                    <div class="stage__content">
+                        <div class="stage__item stage__item1 animate__animated animate__fadeInUp wow"
+                            data-wow-duration="1.5s" data-wow-delay="0.5s">
+                            <div class="stage__front stage__front1">
+                                <div class="stage__number"><img src="img/stage/stage1.svg" alt="number"></div>
+                                <div class="stage__name">Software<br>requirements</div>
+                                <div class="stage__img"><img src="img/stage/stge_img1.svg" alt=""></div>
+                            </div>
+                            <div class="stage__back stage__back">
+                                <div class="stage__number"><img src="img/stage/stage1.svg" alt="number"></div>
+                                <div class="stage__name">Software<br>requirements</div>
+                                <div class="stage__text">We test the requirement documents for compliance with customer
+                                    business goals, conformity, completeness, and consistency</div>
+                            </div>
+                        </div>
+                        <div class="stage__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class="stage__front">
+                                <div class="stage__number"><img src="img/stage/stage2.svg" alt="number"></div>
+                                <div class="stage__name">Software prototype</div>
+                                <div class="stage__img"><img src="img/stage/stge_img2.svg" alt=""></div>
+                            </div>
+                            <div class="stage__back">
+                                <div class="stage__number"><img src="img/stage/stage2.svg" alt="number"></div>
+                                <div class="stage__name">Software prototype</div>
+                                <div class="stage__text">We check prototypes and mockups for correctness and compliance
+                                    with requirements and evaluate the usability of future software</div>
+                            </div>
+                        </div>
+                        <div class="stage__item stage__item animate__animated animate__fadeInUp wow"
+                            data-wow-duration="1.5s" data-wow-delay="0.5s">
+                            <div class="stage__front stage__front">
+                                <div class="stage__number"><img src="img/stage/stage3.svg" alt="number"></div>
+                                <div class="stage__name">Development</div>
+                                <div class="stage__img"><img src="img/stage/stge_img3.svg" alt=""></div>
+                            </div>
+                            <div class="stage__back stage__back">
+                                <div class="stage__number"><img src="img/stage/stage3.svg" alt="number"></div>
+                                <div class="stage__name">Development</div>
+                                <div class="stage__text">We check the correctness of the product at all stages of
+                                    development, conducting functional and integration testing. We automate test
+                                    scenarios
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stage__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class="stage__front">
+                                <div class="stage__number"><img src="img/stage/stage4.svg" alt="number"></div>
+                                <div class="stage__name">Documentation</div>
+                                <div class="stage__img"><img src="img/stage/stge_img4.svg" alt=""></div>
+                            </div>
+                            <div class="stage__back">
+                                <div class="stage__number"><img src="img/stage/stage4.svg" alt="number"></div>
+                                <div class="stage__name">Documentation</div>
+                                <div class="stage__text">We check the completeness and validity of the documents and
+                                    prepare test documentation
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stage__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class="stage__front">
+                                <div class="stage__number"><img src="img/stage/stage5.svg" alt="number"></div>
+                                <div class="stage__name">Release</div>
+                                <div class="stage__img"><img src="img/stage/stge_img5.svg" alt=""></div>
+                            </div>
+                            <div class="stage__back">
+                                <div class="stage__number"><img src="img/stage/stage5.svg" alt="number"></div>
+                                <div class="stage__name">Release</div>
+                                <div class="stage__text">We perform acceptance testing
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stage__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"
+                            data-wow-delay="0.5s">
+                            <div class="stage__front">
+                                <div class="stage__number"><img src="img/stage/stage6.svg" alt="number"></div>
+                                <div class="stage__name">Maintenance<br>and support</div>
+                                <div class="stage__img"><img src="img/stage/stge_img6.svg" alt=""></div>
+                            </div>
+                            <div class="stage__back">
+                                <div class="stage__number"><img src="img/stage/stage6.svg" alt="number"></div>
+                                <div class="stage__name">Maintenance<br>and support</div>
+                                <div class="stage__text">We ensure the correct performance of the product after the
+                                    initial development. We work with system users' reports
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stage__content-phone">
+                        <div class="wrapper-tab">
+                            <div class="tab tab1">
+                                <div class="window-one">
+                                    <img src="img/stage/stage1.svg" alt="" class="tab__number">
+                                    <h3 class="tab__lable">
+                                        Software requirements
+                                    </h3>
+                                    <div class="arrow-test"></div>
+                                </div>
+                                <div class="window-two">
+                                    <div class="tab__text">We test the requirement documents for compliance with
+                                        customer business goals, conformity, completeness, and consistency</div>
+                                    <img src="img/stage/stge_img1.svg" alt="" class="tab__img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrapper-tab">
+                            <div class="tab tab2">
+                                <div class="window-one">
+                                    <img src="img/stage/stage2.svg" alt="" class="tab__number">
+                                    <h3 class="tab__lable">
+                                        Software prototype
+                                    </h3>
+                                    <div class="arrow-test"></div>
+                                </div>
+                                <div class="window-two ">
+                                    <div class="tab__text">We check prototypes and mockups for correctness and
+                                        compliance with requirements and evaluate the usability of future software</div>
+                                    <img src="img/stage/stge_img2.svg" alt="" class="tab__img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrapper-tab">
+                            <div class="tab tab3">
+                                <div class="window-one">
+                                    <img src="img/stage/stage3.svg" alt="" class="tab__number">
+                                    <h3 class="tab__lable">
+                                        Development
+                                    </h3>
+                                    <div class="arrow-test"></div>
+                                </div>
+                                <div class="window-two">
+                                    <div class="tab__text">We check the completeness and validity of the documents and
+                                        prepare test documentation</div>
+                                    <img src="img/stage/stge_img3.svg" alt="" class="tab__img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrapper-tab">
+                            <div class="tab tab4">
+                                <div class="window-one">
+                                    <img src="img/stage/stage4.svg" alt="" class="tab__number">
+                                    <h3 class="tab__lable">
+                                        Documentation
+                                    </h3>
+                                    <div class="arrow-test"></div>
+                                </div>
+                                <div class="window-two ">
+                                    <div class="tab__text">We check the completeness and validity of the documents and
+                                        prepare test documentation</div>
+                                    <img src="img/stage/stge_img4.svg" alt="" class="tab__img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrapper-tab">
+                            <div class="tab tab5">
+                                <div class="window-one">
+                                    <img src="img/stage/stage5.svg" alt="" class="tab__number">
+                                    <h3 class="tab__lable">
+                                        Release
+                                    </h3>
+                                    <div class="arrow-test"></div>
+                                </div>
+                                <div class="window-two ">
+                                    <div class="tab__text">We perform acceptance testing</div>
+                                    <img src="img/stage/stge_img5.svg" alt="" class="tab__img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrapper-tab">
+                            <div class="tab tab6">
+                                <div class="window-one">
+                                    <img src="img/stage/stage6.svg" alt="" class="tab__number">
+                                    <h3 class="tab__lable">
+                                        Maintenance and support
+                                    </h3>
+                                    <div class="arrow-test"></div>
+                                </div>
+                                <div class="window-two">
+                                    <div class="tab__text">We ensure the correct performance of the product after the
+                                        initial development. We work with system users' reports</div>
+                                    <img src="img/stage/stge_img6.svg" alt="" class="tab__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__advantages advantages">
+                <div class="advantages__container">
+                    <div class="advantages__ibg _ibg">
+                        <img src="img/advantages/advantages__main.png" alt="">
+                    </div>
+                    <h2 class="advantages__lable">Benefits of working <br>with us</h2>
+                    <div class="advantages__items">
+                        <div class="advantages__item">
+                            <img src="img/advantages/advantages__statistic.svg" alt="" class="advantages__img">
+                            <div class="advantages__text">We've got more than 6 years of software testing experience
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="img/advantages/advantages__communication.svg" alt="" class="advantages__img">
+                            <div class="advantages__text">For each project, we take into account the specifics of a
+                                particular company to achieve their business objectives in the most accurate way</div>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="img/advantages/advantages__point.svg" alt="" class="advantages__img">
+                            <div class="advantages__text">Our testers are trained by skilled experts, who have more than
+                                12 years of experience. QA lead supervises their work at every stage
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__format format">
+                <div class="format__ibg ibg">
+                    <img src="img/format/format__main.png" alt="">
+                </div>
+                <div class="format__container">
+                    <div class="format__items ">
+                        <h2 class="format__lable">Collaborate with us</h2>
+                        <p class="format__content">Outsourcing - signing a contract with Pro-test.studio to provide software testing services</p>
+                        <div class="format__main">
+                            <div class="format__item">
+                                <img src="img/format/format__part-time.svg" alt="" class="format__img">
+                                <h4 class="format__item__lable">Part-time</h4>
+                                <div class="format__text">For short-term objectives</div>
+                            </div>
+                            <div class="format__item">
+                                <img src="img/format/format__full-time.svg" alt="" class="format__img">
+                                <h4 class="format__item__lable">Full-time</h4>
+                                <div class="format__text">For long-term partnership</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__how how">
+                <h2 class="how__lable">How to get started with us</h2>
+                <div class="how__content">
+
+                    <div class="how__item how__item1 wow" data-wow-duration="1.0s">
+                        <img src="img/how/1.png" alt="number" class="how__number">
+                        <div>
+                            <div class="how__name">Contact us</div>
+                            <p class="how__text">Call us on
+                                <a href="tel:+971585902540">+ 971 58 590 2540</a>
+                                or email us:
+                                <a href="mailto:support@pro-test.studio">support@pro-test.studio</a>
+                            </p>
+                        </div>
+                        <img src="img/how/frst.png" alt="" class="how__img">
+                    </div>
+
+                    <div class="how__item how__item2 wow" data-wow-duration="1.0s">
+                        <img src="img/how/2.png" alt="number" class="how__number">
+                        <div>
+                            <div class="how__name">Free estimate</div>
+                            <p class="how__text">
+                                We'll get back to you as soon as possible with your product assessment
+                            </p>
+                        </div>
+                        <img src="img/how/scnd.png" alt="" class="how__img">
+                    </div>
+
+                    <div class="how__item how__item3 wow" data-wow-duration="1.0s">
+                        <img src="img/how/3.png" alt="number" class="how__number">
+                        <div>
+                            <div class="how__name">Signing the agreement</div>
+                            <p class="how__text">
+                                We will select specialists for your tasks and get to work
+                            </p>
+                        </div>
+                        <img src="img/how/thrd.png" alt="" class="how__img">
+                    </div>
+
+                    <div class="how__item how__item4 wow" data-wow-duration="1.0s">
+                        <img src="img/how/4.png" alt="number" class="how__number">
+                        <div>
+                            <div class="how__name">Conducting the testing</div>
+                            <p class="how__text">
+                                We will develop a test model, conduct all the necessary types of testing and create
+                                reporting documentation
+                            </p>
+                        </div>
+                        <img src="img/how/frth.png" alt="" class="how__img">
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="page__application application animate__animated animate__fadeIn wow"
+                data-wow-duration="1.5s">
+                <div class="application__container">
+                    <h2 class="application__lable">Get in touch</h2>
+                    <p class="application__text">If you have any questions or want to receive QA training, contact us
+                    </p>
+                    <div class="application__buttons">
+                        <div class="application__btn button-blue">
+                            <a href="tel:+971585902540" class="button-blue__link">CALL NOW</a>
+                        </div>
+                        <div class="application__btn button-blue">
+                            <a href="mailto:support@pro-test.studio" class="button-blue__link">EMAIL US</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__clients clients">
+                <div class="clients__container">
+                    <h2 class="clients__lable">Our clients</h2>
+                    <div class="clients__items">
+                        <div class="clients__item"><a target="_blank" href="https://blokky.app/"><img
+                                    src="img/clients/blokky.svg" alt="client"></a></div>
+                        <div class="clients__item"><a target="_blank" href="https://teamextension.ro/"><img
+                                    src="img/clients/team.png" alt="client"></a></div>
+                        <div class="clients__item"><img src="img/clients/blueberry.svg" alt="client"></div>
+                        <div class="clients__item"><a target="_blank" href="https://apphud.com/"><img
+                                    src="img/clients/apphud.svg" alt="client"></a></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__comments comments">
+                <div class="comments__container">
+                    <div class="comments__control">
+                        <h2 class="comments__lable">Reviews</h2>
+                        <p class="comments__description">With love for your business</p>
+                        <div class="comments__arrows"></div>
+                    </div>
+                    <div class="comments__slider slider">
+                        <div class="slider__items">
+                            <div class="slider__item">
+                                <div class="slider__left">
+                                    <img src="img/slider/anton.png" alt="face" class="slider__img">
+                                    <div class="slider__info"><img src="img/slider/Anton_Sergeyev.svg"
+                                            alt="coment_name"></div>
+                                </div>
+                                <div class="slider__right">
+                                    <p class="slider__text">While working on a mobile app, we got tired of the little
+                                        annoying bugs that kept popping up and ruining our lives. What's worse,
+                                        sometimes we lost money from monetizing the app because of it. Fortunately, the
+                                        guys stepped up to help and very quickly set up a high-quality and
+                                        well-structured testing process - dozens of bugs were found and fixed, among
+                                        which critical ones. Thank you very much, now all releases go smoothly,
+                                        predictably, and according to plan!</p>
+                                </div>
+                            </div>
+
+                            <div class="slider__item">
+                                <div class="slider__left">
+                                    <img src="img/slider/Apphud.png" alt="face" class="slider__img">
+                                    <div class="slider__info"><img src="img/slider/Stanovaya_Eugenia.svg" alt=""></div>
+
+
+                                </div>
+                                <div class="slider__right">
+                                    <p class="slider__text">Our company does "Collecting analytics for mobile app
+                                        owners".<br>I want to thank the guys from @pro-test.studio for setting up
+                                        structured QA processes in the company. They were conscientious and punctual at
+                                        completing set tasks and goals and did them on time. They showed us how to plan
+                                        releases properly, divide responsibilities and achieve success. Thank you very
+                                        much!</p>
+                                </div>
+                            </div>
+
+                            <div class="slider__item">
+                                <div class="slider__left">
+                                    <img src="img/slider/Martin.png" alt="face" class="slider__img">
+                                    <div class="slider__info"><img src="img/slider/Martin_Green.svg" alt=""></div>
+
+
+                                </div>
+                                <div class="slider__right">
+                                    <p class="slider__text">The staff of pro-test.studio have made a truly significant
+                                        difference to our project success rate.
+                                        It is not enough to know that software succeeds when the most common use cases
+                                        are attempted. For a project success, we need to avoid regression failures by
+                                        use of
+                                        automated testing; we need to protect data through security testing; we need to
+                                        verify the edge-cases are handled with negative testing.
+                                        And most of all, we need a consistency of approach that brings the whole team
+                                        together.
+                                        We have found success with pro-test.studio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__about">
+                    <h4 class="footer__name">About Us</h4>
+                    <div class="footer__text">We have been providing testing services<br>since 2016. We have experience
+                        in testing<br>digital products of both large state-owned<br>enterprises and foreign companies.
+                        We teach<br>Software testing and accompany our<br>students during their work
+                    </div>
+                </div>
+                <div class="footer__container">
+                    <nav class="footer__nav nav">
+                        <div class="nav__item nav__item1">Documents
+                        </div>
+                        <a href="pdf/Business_License.pdf" class="nav__item">Business License</a>
+                        <a href="pdf/Certificate_of_Formation.pdf" class="nav__item">Certificate of Formation</a>
+                    </nav>
+                    <div class="footer__nav nav">
+                        <div class="nav__item nav__item1">Links
+                        </div>
+                        <a href="services.html" class="nav__item">Software Testing Services</a>
+                        <a href="course.html" class="nav__item">Software Testing courses</a>
+                    </div>
+                    <div class="footer__contacts contacts">
+                        <div class="contacts__item">
+                            <img src="img/footer/mail.svg" alt="" class="contacts__img">
+                            <a href="mailto:support@pro-test.studio" class="contacts__text">support@pro-test.studio</a>
+                        </div>
+                        <div class="contacts__item">
+                            <img src="img/footer/location.svg" alt="" class="contacts__img">
+                            <a target="_blank" href="https://goo.gl/maps/D7PTG56SqYukgodL6" class="contacts__text">UAE,
+                                Dubai</a>
+                        </div>
+                        <div class="contacts__item">
+                            <img src="img/footer/phone.svg" alt="" class="contacts__img">
+                            <a href="tel:+971585902540" class="contacts__text">+ 971 58 590 2540</a>
+                        </div>
+                    </div>
+                    <span class="footer__l footer__l_to"><img src="img/logo.svg" alt="" class="footer__logo"></span>
+                </div>
+            </div>
+            <span class="footer__copirate footer__l_to">© Pro-test.studio 2022</span>
+        </footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+.format {
+
+    position: relative;
+    &__container {
+    }
+
+    &__lable {
+        text-align: center;
+        white-space: nowrap;
+
+    
+        line-height: 125%;
+        margin-top: calc(90px + (163 - 90) * ((100vw - 768px) / (1918 - 768)));
+        margin-bottom: calc(10px + (14 - 10) * ((100vw - 768px) / (1918 - 768)));
+        
+    }
+
+    &__content{
+        white-space: nowrap;
+        @media (max-width:1024px) {
+            white-space: normal;
+            width: calc(320px + (410 - 320) * ((100vw - 768px) / (1024 - 768))) ;
+            font-weight: 300;
+        }
+        text-align: center;
+        margin-bottom: calc(30px + (93 - 30) * ((100vw - 768px) / (1918 - 768)));
+        margin-top: 0 !important;
+
+        font-size: calc( 12px + ( 22 - 12) * ((100vw - 768px) / (1918 - 768)));
+        line-height: 120%;
+        text-align: center;
+    }
+
+    &__items {
+        width: calc(440px + (805 - 440) * ((100vw - 768px) / (1918 - 768)));
+        
+        margin-left: calc(304px + (924 - 304) * ((100vw - 768px) / (1918 - 768)));
+        margin-right: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    &__main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__item {
+        position: relative;
+        margin-bottom: calc(30px + (71 - 30) * ((100vw - 768px) / (1918 - 768)));
+        
+        height: calc(70px + (121 - 70) * ((100vw - 768px) / (1918 - 768)));
+        width: calc(314px + (716 - 314) * ((100vw - 768px) / (1918 - 768)));
+        padding-left: calc(55px + (98 - 55) * ((100vw - 768px) / (1918 - 768)));
+        border-radius: 50px 0 50px 0; 
+        border: 5px solid #92C5E8;
+        
+        align-self: center;
+    }
+
+    &__item__lable {
+        line-height: 180% !important;
+        padding-top: calc(0px + (20 - 0) * ((100vw - 768px) / (1918 - 768)));
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: calc(12px + (18 - 12) * ((100vw - 768px) / (1918 - 768)));
+    }
+
+    &__img {
+        position: absolute;
+        right: -5.6%;
+        top:  -47%;
+        width: calc(46px + (117 - 46) * ((100vw - 768px) / (1918 - 768))) !important; 
+        height: calc(50px + (140 - 50) * ((100vw - 768px) / (1918 - 768))) !important;
+        img{
+        }
+    }
+    
+    &__ibg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @media (max-width:1370px) {
+            bottom: 0%;
+        }
+        @media (max-width:1015px) {
+            bottom: 3%;
+        }
+        @media (max-width: 860px) {
+            bottom: 4%;
+        }
+        img {
+            width: calc(302px + (701 - 302) * ((100vw - 768px) / (1918 - 768)));
+            height: calc(305px + (730 - 305) * ((100vw - 768px) / (1918 - 768))) ;
+            object-position: center center;
+        }
+    }
+
+}
+
+
+
+@media (max-width: 769px){
+.format {
+
+		&__ibg {
+
+            bottom: -240px;
+            @media (max-width: 769px){
+                bottom: -225px;
+            }
+
+            img{
+                width:  calc(200px + (270 - 200) * ((100vw - 375px) / (769 - 375))) !important;
+                height: calc(203px + (270 - 203) * ((100vw - 375px) / (769 - 375))) !important;
+            }
+		}
+
+		&__container {
+		}
+
+		&__items {
+            margin: 0 auto;
+            display: block;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+		}
+
+		&__lable {
+            flex: 0 1 90%;
+            display: block;
+            text-align: center;
+		}
+
+		&__content {
+            white-space: normal;
+            font-size: 12px;
+            width: 210px;
+            margin-top: 10px !important;
+            margin-bottom: 34px !important;
+		}
+
+        &__main{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+		&__item {
+            flex: 1 0 45%;
+            padding-left: 0 !important;
+            height: 143px;
+            margin-bottom: 0 !important;
+            border: none;
+            display: inline-block;
+            text-align: center;
+		}
+
+        &__item__lable{
+            font-size: 14px;
+            font-weight: 500 !important;
+        }
+
+		&__text {
+            font-size: 14px;
+            letter-spacing: -0.015em;
+		}
+
+		&__img {
+            position: static;
+            width: 72px !important;
+            height: 77px !important;
+		}
+}
+}

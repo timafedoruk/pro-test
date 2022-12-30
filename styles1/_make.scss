@@ -1,0 +1,73 @@
+
+.make {
+
+    &__container {
+        margin: 0 auto;
+    max-width: calc(316px + (1431 - 316) * ((100vw - 375px) / (1918 - 375)));
+    text-align: center;
+    @media (max-width: 519px) {
+        width: 75%;
+    }
+    }
+
+    &__lable {
+        margin-top: calc(59px + (135 - 59) * ((100vw - 768px) / (1918 - 768)));
+        margin-bottom: calc(41px + (76 - 41) * ((100vw - 375px) / (1918 - 375)));
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 519px) {
+            flex-direction: column;
+            >:not(:last-child){
+                margin-bottom: 22px;
+            }
+        }
+        
+    }
+
+    &__item {
+        @media (min-width: 519px) {
+        flex: 0 0 33.3333%;
+        flex-grow: 1 !important;
+        flex-direction: column;
+        }
+        height: 100%;
+        display: flex;
+        
+    }
+
+    &__img {
+        height:  calc(78px + (203 - 78) * ((100vw - 768px) / (1918 - 768)));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 519px) {
+        height: 80px;
+        }
+        img{
+            height: 100%;
+        }
+        picture{
+            height: 100%;
+        }
+    }
+
+    &__text {
+        justify-content: end;
+        @media (min-width: 519px) {
+            span{
+                display: block;
+            }
+        }
+        @media (max-width: 519px) {
+            align-self: center;
+            font-size: 16px !important;
+            text-align: left !important;
+            margin-left: 29px;
+        }
+    }
+}
+.description {
+}

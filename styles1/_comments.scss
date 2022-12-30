@@ -1,0 +1,391 @@
+// 1504 667
+/* Слайдер */
+.slick-slider {}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочка */
+.slick-list {}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+}
+
+/* Слайд */
+.slick-slide {}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {}
+
+/* Слайд основной */
+.slick-slide.slick-current {}
+
+/* Слайд по центру */
+.slick-slide.slick-center {}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned {}
+
+/* Стрелка */
+.slick-arrow {
+    position: relative;
+    z-index: 1;
+    width: calc(27px + (69 - 27) * ((100vw - 768px) / (1918 - 768)));
+    height: calc(27px + (69 - 27) * ((100vw - 768px) / (1918 - 768)));
+    margin-top: calc(20px + (51 - 20) * ((100vw - 768px) / (1918 - 768)));
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+    font-size: 0;
+    background: url('../img/slider/arrow-left.svg') 0 0/100% 100%;
+    margin-right: calc(13px + (33 - 13) * ((100vw - 768px) / (1918 - 768)));
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+    font-size: 0;
+    background: url('../img/slider/arrow-right.svg') 0 0/100% 100%;
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {}
+
+/* Точки (булиты) */
+.slick-dots {}
+
+.slick-dots li {}
+
+/* Активная точка */
+.slick-dots li.slick-active {}
+
+/* Элемент точки */
+.slick-dots li button {}
+
+
+
+.page {
+
+    &__comments {
+        margin-top: calc(50px + (100 - 50) * ((100vw - 768px) / (1918 - 768)));
+    }
+}
+
+.comments {
+
+    &__container {
+        width: 77%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    &__control {}
+
+    &__lable {
+        margin-bottom: calc(12px + (21.36 - 12) * ((100vw - 768px) / (1918 - 768)));
+       
+
+        font-weight: 700;
+        font-size: calc(24px + (36 - 24) * ((100vw - 768px) / (1918 - 768))) !important;
+        line-height: 139% !important;
+        text-align: right;
+        letter-spacing: -0.015em !important;
+        color: #007BFF !important;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: calc(16px + (36 - 16) * ((100vw - 768px) / (1918 - 768))) !important;
+        line-height: 139%;
+        text-align: right;
+        letter-spacing: -0.015em;
+        margin-bottom: calc(36px + (79 - 36) * ((100vw - 768px) / (1918 - 768)));
+
+    }
+
+    &__arrows {
+        text-align: right;
+    }
+
+    &__slider {}
+}
+
+.slider {
+    background: url('../img/slider/main.png') 0 0/ 100% 100% no-repeat;
+    width: calc(393px + (787 - 393) * ((100vw - 768px) / (1918 - 768)));
+    height: calc(352px + (713 - 352) * ((100vw - 768px) / (1918 - 768)));
+
+    &__items {
+        width: calc(312px + (566 - 312) * ((100vw - 768px) / (1918 - 768)));
+        height: calc(247px + (445 - 247) * ((100vw - 768px) / (1918 - 768)));
+        // overflow: visible;
+        margin-left: calc(47px + (120 - 47) * ((100vw - 768px) / (1918 - 768)));
+        margin-top: calc(70px + (130 - 70) * ((100vw - 768px) / (1918 - 768)));
+    }
+
+    &__item {
+        height: calc(247px + (445 - 247) * ((100vw - 768px) / (1918 - 768)));
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        align-self: flex-end;
+        width: calc(110px + (170 - 110) * ((100vw - 768px) / (1918 - 768)));
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+
+        margin-bottom: 10px;
+    }
+
+    &__img {
+        width: calc(94px + (170 - 94) * ((100vw - 768px) / (1918 - 768)));
+        height: calc(94px + (170 - 94) * ((100vw - 768px) / (1918 - 768)));
+        object-fit: cover;
+        border-radius: 50%;
+        
+        margin-bottom: calc(5px + (24 - 5) * ((100vw - 768px) / (1918 - 768)));
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(48px + (64 - 48) * ((100vw - 768px) / (1918 - 768)));
+
+        margin: 0 auto;
+        width: 100%;
+        font-weight: 700;
+        font-size: calc(12px + (16 - 12) * ((100vw - 768px) / (1918 - 768)));
+        line-height: 133%;
+        color: #ffffff;
+        text-align: center;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__right {
+        width: calc(162px + (324 - 162) * ((100vw - 768px) / (1918 - 768)));
+        height: calc(187px + (375 - 187) * ((100vw - 768px) / (1918 - 768)));
+    }
+
+    &__text {
+        width: calc(150px + (297 - 150) * ((100vw - 768px) / (1918 - 768)));
+        height: calc(187px + (375 - 187) * ((100vw - 768px) / (1918 - 768)));
+        overflow: scroll;
+        overflow-x: hidden;
+        font-weight: calc(400 + (700 - 400) * ((100vw - 768px) / (1918 - 768)));
+        font-style: italic;
+        font-weight: 700;
+        font-size: calc(10px + (18 - 10) * ((100vw - 768px) / (1918 - 768)));
+        line-height: 180%;
+        letter-spacing: -0.015em;
+        text-align: left;
+        color: #FFFFFF;
+
+        padding-right: 5px !important;
+
+        scrollbar-color: #abaea9 #090909;
+        /* «цвет ползунка» «цвет полосы скроллбара» */
+        scrollbar-width: thin;
+
+
+        /* полоса прокрутки (скроллбар) */
+        &::-webkit-scrollbar {
+            width: 5px;
+            /* ширина для вертикального скролла */
+            height: 5px;
+            /* высота для горизонтального скролла */
+        }
+
+        /* ползунок скроллбара */
+        &::-webkit-scrollbar-thumb {
+            background-color: #c5bfcc !important;
+            border-radius: 3px 3px 3px 3px !important;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            border-radius: 1em !important;
+        }
+
+        /* Стрелки */
+
+        &::-webkit-scrollbar-button:vertical:start:decrement {
+
+            background-color: #f6f8f4 !important;
+            display: none;
+        }
+
+        &::-webkit-scrollbar-button:vertical:end:increment {
+            background-color: #f6f8f4 !important;
+            display: none;
+        }
+
+        &::-webkit-scrollbar-button:horizontal:start:decrement {
+            background-color: #f6f8f4;
+            display: none;
+        }
+
+        &::-webkit-scrollbar-button:horizontal:end:increment {
+            background-color: #f6f8f4;
+            display: none;
+        }
+
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .comments {
+
+        &__container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__control {
+            margin-bottom: calc(35px + (40 - 35) * ((100vw - 375px) / (660 - 375)));
+        }
+
+        &__lable {
+            text-align: center;
+            font-size: calc(24px + (30 - 24) * ((100vw - 375px) / (660 - 375))) !important;
+        }
+
+        &__description {
+            text-align: center;
+            font-size: calc(18px + (22 - 18) * ((100vw - 375px) / (660 - 375))) !important;
+        }
+
+        &__arrows {
+            text-align: center;
+        }
+
+        &__slider {}
+    }
+
+.slick-arrow {
+    width: 40px;
+    height: 40px;
+    }
+.slick-arrow.slick-prev {
+    margin-right: 30px;
+    }
+
+    .slider {
+
+        width: calc(337px + (393 - 337) * ((100vw - 375px) / (768 - 375)));
+        height: calc(303px + (352 - 303) * ((100vw - 375px) / (768 - 375)));
+
+        &__items {
+            margin: 0;
+            width: calc(337px + (393 - 337) * ((100vw - 375px) / (768 - 375)));
+            height: calc(303px + (352 - 303) * ((100vw - 375px) / (768 - 375)));
+        }
+
+        &__item {
+            padding-right: calc(45px + (50 - 45) * ((100vw - 375px) / (768 - 375)));
+            padding-bottom:  calc(52px + (56 - 52) * ((100vw - 375px) / (768 - 375)));
+            padding-left: calc(25px + (37 - 25) * ((100vw - 375px) / (768 - 375)));
+            padding-top: 50px;
+            height: calc(303px + (352 - 303) * ((100vw - 375px) / (768 - 375)));
+            width: 100%;
+        }
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: calc(110px + (110 - 110) * ((100vw - 375px) / (768 - 375)));
+            // height: calc(211px + (247 - 211) * ((100vw - 375px) / (768 - 375)));
+        }
+
+        &__img {
+            width: calc(90px + (94 - 90) * ((100vw - 375px) / (768 - 375)));
+            height: calc(90px + (94 - 90) * ((100vw - 375px) / (768 - 375)));
+            margin-bottom: 5px;
+        }
+
+        &__info {
+            width: 100%;
+            font-size: 12px;
+        }
+
+        &__right {
+            height: calc(164px + (187 - 164) * ((100vw - 375px) / (768 - 375)));
+            width: calc(129px + (162 - 129) * ((100vw - 375px) / (768 - 375)));
+        }
+
+        &__text {
+
+            width: calc(129px + (150 - 129) * ((100vw - 375px) / (768 - 375)));
+            height: calc(164px + (187 - 164) * ((100vw - 375px) / (768 - 375)));
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 180%;
+            letter-spacing: -0.015em;
+
+            scrollbar-color: #abaea9 #0000;
+            /* «цвет ползунка» «цвет полосы скроллбара» */
+            scrollbar-width: thin;
+
+
+            /* полоса прокрутки (скроллбар) */
+            &::-webkit-scrollbar {
+                width: 2.5px;
+                /* ширина для вертикального скролла */
+                height: 2.5px;
+                /* высота для горизонтального скролла */
+            }
+
+            /* ползунок скроллбара */
+            &::-webkit-scrollbar-thumb {
+                background-color: #c5bfcc !important;
+                border-radius: 3px 3px 3px 3px !important;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                border-radius: 1em !important;
+            }
+
+            /* Стрелки */
+
+            &::-webkit-scrollbar-button:vertical:start:decrement {
+
+                background-color: #f6f8f4 !important;
+                display: none;
+            }
+
+            &::-webkit-scrollbar-button:vertical:end:increment {
+                background-color: #f6f8f4 !important;
+                display: none;
+            }
+
+            &::-webkit-scrollbar-button:horizontal:start:decrement {
+                background-color: #f6f8f4;
+                display: none;
+            }
+
+            &::-webkit-scrollbar-button:horizontal:end:increment {
+                background-color: #f6f8f4;
+                display: none;
+            }
+
+        }
+    }
+
+}
